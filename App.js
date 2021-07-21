@@ -21,6 +21,38 @@ const App = () => {
     }
 
     const findWinner=() =>{
+        if(tictaktoeArray[0]==tictaktoeArray[1] && tictaktoeArray[0]==tictaktoeArray[2] && tictaktoeArray[0]!=""){
+		setWinMessage(tictaktoeArray[0] + " has Won ")
+		return toast(  tictaktoeArray[0] + " has Won ",{type:"success"})
+	}
+	else if(tictaktoeArray[0]==tictaktoeArray[3] && tictaktoeArray[0]==tictaktoeArray[6] && tictaktoeArray[0]!=""){
+		setWinMessage(tictaktoeArray[0] + " has Won ")
+		return toast(  tictaktoeArray[0] + " has Won ",{type:"success"})
+	}
+	else if(tictaktoeArray[3]==tictaktoeArray[4] && tictaktoeArray[3]==tictaktoeArray[5] && tictaktoeArray[3]!=""){
+		setWinMessage(tictaktoeArray[3] + " has Won ")
+		return toast(  tictaktoeArray[3] + " has Won ",{type:"success"})
+	}
+	else if(tictaktoeArray[6]==tictaktoeArray[7] && tictaktoeArray[6]==tictaktoeArray[8] && tictaktoeArray[6]!=""){
+		setWinMessage(tictaktoeArray[6] + " has Won ")
+		return toast(  tictaktoeArray[6] + " has Won ",{type:"success"})
+	}
+	else if(tictaktoeArray[1]==tictaktoeArray[4] && tictaktoeArray[1]==tictaktoeArray[7] && tictaktoeArray[1]){
+		setWinMessage(tictaktoeArray[1] + " has Won ")
+		return toast(  tictaktoeArray[1] + " has Won ",{type:"success"})
+	}
+	else if(tictaktoeArray[2]==tictaktoeArray[5] && tictaktoeArray[2]==tictaktoeArray[8] && tictaktoeArray[2]){
+		setWinMessage(tictaktoeArray[2] + " has Won ")
+		return toast(  tictaktoeArray[2] + " has Won ",{type:"success"})
+	}
+	else if(tictaktoeArray[0]==tictaktoeArray[4] && tictaktoeArray[0]==tictaktoeArray[8] && tictaktoeArray[0]){
+		setWinMessage(tictaktoeArray[0] + " has Won ")
+		return toast(  tictaktoeArray[0] + " has Won ",{type:"success"})
+	}
+	else if(tictaktoeArray[2]==tictaktoeArray[4] && tictaktoeArray[2]==tictaktoeArray[6] && tictaktoeArray[2]){
+		setWinMessage(tictaktoeArray[2] + " has Won ")
+		return toast(  tictaktoeArray[2] + " has Won ",{type:"success"})
+	}
 
     }
 
